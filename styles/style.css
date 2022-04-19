@@ -1,0 +1,182 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    display: grid;
+    margin: 0 auto;
+}
+
+
+/* Header */
+header {
+    padding: 50px 0 20px;
+}
+
+
+header .container {
+    grid-template-columns: auto auto;
+}
+
+.site-title a {
+    text-decoration: none;
+}
+
+.site-title a h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.site-title h1 span {
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.navbar .nav-item {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar .nav-item a.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar .nav-item a.nav-link:hover {
+    color: #E02C6D;
+}
+
+
+
+/* Dropdown */
+.dropbtn {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #E02C6D;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    color: #E02C6D;
+}
+
+
+
+/* Blogs */
+
+.wrapper {
+    display: flex;
+    grid-gap: 10px;
+    background-color: #fff;
+}
+
+.box {
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.a {
+    max-width: 75%;
+}
+
+.b {
+    max-width: 100%;
+    background-color: rgb(230, 211, 223);
+    margin: 20px;
+}
+
+.announce-title1 {
+    text-align: center;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.blog:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 26px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: black;
+    font-size: 16px;
+}
+
+
+/* Footer */
+
+.footer-container {
+    padding: 50px;
+    background-color: rgb(9, 9, 69);
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+}

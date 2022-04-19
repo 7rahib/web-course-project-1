@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">
+                <a href="#">
+                    <h1 class="title">Web Development</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="navbar">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Sign up</a></li>
+                    <li class="nav-item"><a class="nav-link dropdown" href="login.html">Login</a></li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Profile</a>
+                        <div class="dropdown-content">
+                            <a href="">User</a>
+                            <a href="login.html">Login</a>
+                            <a href="registration.html">Register</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form onsubmit="registerFormValidation()" action="#" method="">
+        <div class="box">
+            <h1>Register</h1>
+            <input id="email" type="email" name="email" placeholder="Email" class="email" />
+            <input id="fname" type="text" name="name" placeholder="Full Name" class="email" />
+            <input id="mobile" type="number" name="number" placeholder="Number" class="email" />
+
+            <input id="pass" type="password" name="password" placeholder="Password" class="password" />
+
+            <input id="confirm-pass" type="password" name="confirm-password" placeholder="Confirm Password"
+                class="password" />
+            <div class="btn">
+                <a href="#">
+                    <input id="btn2" type="submit" value="Submit"></input>
+                </a>
+            </div>
+        </div>
+    </form>
+    <script src="js/registerFormValidation.js"></script>
+</body>
+
+</html>
