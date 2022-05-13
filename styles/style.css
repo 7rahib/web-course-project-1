@@ -125,11 +125,12 @@ header .container {
 
 .b {
     max-width: 100%;
-    background-color: rgb(230, 211, 223);
+    background-color: rgb(244, 239, 242);
     margin: 20px;
 }
 
-.announce-title1 {
+.announce-title {
+    font-size: 20px;
     text-align: center;
 }
 
@@ -156,16 +157,22 @@ header .container {
 }
 
 .blog-info {
-    margin-left: 16px;
+    margin: 10px 0 0 16px;
+    padding: 20px;
 }
 
 .blog-title {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .blog-author {
     color: black;
     font-size: 16px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 10px 0;
 }
 
 
@@ -179,4 +186,122 @@ header .container {
 .footer-text {
     color: white;
     text-align: center;
+}
+
+
+
+
+
+
+/* Carousel */
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn {
+    position: relative;
+    height: 300px;
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+
+
+/* Logos */
+.company {
+    width: 1110px;
+    height: 150px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Goals */
+.second-section {
+    width: 100%;
+    margin: 80px 0;
+}
+
+.mission-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.second-width {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.mission-box {
+    margin: 0px 15px;
+    width: 20%;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+}
+
+.mission-box img {
+    width: 45%;
+    height: 110px;
+}
+
+#blue {
+    background-color: rgb(215, 215, 253);
+}
+
+#pink {
+    background-color: rgb(255, 217, 238);
+}
+
+#green {
+    background-color: rgb(212, 255, 212);
 }
