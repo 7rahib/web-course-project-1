@@ -264,6 +264,10 @@ img:nth-child(5) {
     align-content: center;
 }
 
+.company img {
+    width: 80px;
+}
+
 
 /* Goals */
 .second-section {

@@ -36,25 +36,17 @@
             </nav>
         </div>
     </header>
-    <form onsubmit="registerFormValidation()" action="#" method="">
-        <div class="box">
-            <h1>Register</h1>
-            <input id="email" type="email" name="email" placeholder="Email" class="email" />
-            <input id="fname" type="text" name="name" placeholder="Full Name" class="email" />
-            <input id="mobile" type="number" name="number" placeholder="Number" class="email" />
-
-            <input id="pass" type="password" name="password" placeholder="Password" class="password" />
-
-            <input id="confirm-pass" type="password" name="confirm-password" placeholder="Confirm Password"
-                class="password" />
-            <div class="btn">
-                <a href="#">
-                    <input id="btn2" type="submit" value="Submit"></input>
-                </a>
-            </div>
-        </div>
+    <form onsubmit="registerFormValidation()" action="#" class="box">
+        <h1>Register</h1>
+        <input id="email" type="email" name="email" placeholder="Email" class="email" />
+        <input id="fname" type="text" name="name" placeholder="First Name" class="email" />
+        <input id="lname" type="text" name="name" placeholder="Last Name" class="email" />
+        <input id="mobile" type="number" name="number" placeholder="Number" class="email" />
+        <input id="pass" type="password" name="password" placeholder="Password" class="password" />
+        <input id="pass" type="password" name="confirm-password" placeholder="Confirm Password" class="password" />
+        <input id="btn2" type="submit" value="Submit"></input>
     </form>
-    <script src="js/registerFormValidation.js"></script>
+    <script src="./js/formValidation.js"></script>
 </body>
 
 </html>
